@@ -10,13 +10,12 @@
 ### How do I get set up? ###
 
 * Configuration
-`
-virtualenv venv
 
-. venv/bin/activate
+`virtualenv venv`
 
-pip install requirements.txt
-`
+`. venv/bin/activate`
+
+`pip install requirements.txt`
 
 * Dependencies
 jsonpickle: https://jsonpickle.github.io/
