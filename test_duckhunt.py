@@ -84,7 +84,7 @@ class DuckhuntTest(unittest.TestCase):
 
     def test_serialization_pickle(self):
         ser = pickle.dumps(self.bom_populated)
-        self.assertTrue('2344-cece-455' in bytearray(ser))
+        self.assertTrue(bytearray('2344-cece-455') in bytearray(ser))
 
     def test_deserialization_pickle(self):
         ser = pickle.dumps(self.bom_populated)
