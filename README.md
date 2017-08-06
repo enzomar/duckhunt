@@ -10,13 +10,17 @@
 ### How do I get set up? ###
 
 * Configuration
+`
 virtualenv venv
 . venv/bin/activate
 pip install requirements.txt
+`
 * Dependencies
 jsonpickle: https://jsonpickle.github.io/
 * How to run tests
+`
 python test_duckhunt.py
+`
 
 ### Who do I talk to? ###
 
