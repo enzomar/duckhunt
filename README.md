@@ -4,8 +4,6 @@
 ### What is this repository for? ###
 
 * Duckhunt decorator: to ne used while define a class you want to have attribute type checks and avoid adding new attribute (ducktyping)
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
 
