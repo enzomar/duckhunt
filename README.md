@@ -4,26 +4,21 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-* Quick summary
+* Duckhunt decorator: to ne used while define a class you want to have attribute type checks and avoid adding new attribute (ducktyping)
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
 
-* Summary of set up
 * Configuration
+virtualenv venv
+. venv/bin/activate
+pip install requirements.txt
 * Dependencies
-* Database configuration
+jsonpickle: https://jsonpickle.github.io/
 * How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
+python test_duckhunt.py
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Vincenzo Marafioti (enzo.mar@gmail.com)
