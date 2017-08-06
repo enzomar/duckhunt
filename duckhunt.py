@@ -30,22 +30,22 @@ def frozen_setattr(cls, key, value):
 
 
 def duckhunt(cls):
-    new_dct = dict()
+    cls_dct = dict()
     frozen_attrs = dict()
     for key, value in cls.__dict__.items():
         # print key, value
         if isinstance(value, type):
             # print '  ',value
             value = getter_setter_gen(key, value)
-        new_dct[key] = value
+        cls_dct[key] = value
         frozen_attrs[key] = object.__setattr__
         frozen_attrs['__' + key] = object.__setattr__
 
     # remove __dict__ key 0> fix pickle issue
-    del new_dct['__dict__']
+    del cls_dct['__dict__']
 
     # Creates a new class, using the modified dictionary as the class dict:
-    n = type(cls.__name__, cls.__bases__, new_dct)
+    n = type(cls.__name__, cls.__bases__, cls_dct)
     n.__setattr__ = frozen_setattr
     n.__str__ = json_str
     n.__frozen_attrs = frozen_attrs
