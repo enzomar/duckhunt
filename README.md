@@ -3,7 +3,7 @@
 
 ### What is this repository for? ###
 
-* Duckhunt decorator: to ne used while define a class you want to have attribute type checks and avoid adding new attribute (ducktyping)
+* Duckhunt decorator: to be used while define a class you want to have attributes types checks and avoid adding new attribute (ducktyping)
 
 ### How do I get set up? ###
 
