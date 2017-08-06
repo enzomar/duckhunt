@@ -82,11 +82,7 @@ class DuckhuntTest(unittest.TestCase):
         with self.assertRaises(AttributeError):
             self.bom.xxx = 0
 
-    def test_serialization_pickle(self):
-        ser = pickle.dumps(self.bom_populated)
-        self.assertTrue(bytearray('2344-cece-455', 'utf8') in bytearray(ser, 'utf8'))
-
-    def test_deserialization_pickle(self):
+    def test_pickle(self):
         ser = pickle.dumps(self.bom_populated)
         des_bom = pickle.loads(ser)
         ser2 = pickle.dumps(des_bom)
