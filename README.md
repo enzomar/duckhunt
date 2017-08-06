@@ -20,7 +20,3 @@ jsonpickle: https://jsonpickle.github.io/
 * How to run tests
 
 `python test_duckhunt.py`
-
-### Who do I talk to? ###
-
-* Vincenzo Marafioti (enzo.mar@gmail.com)
